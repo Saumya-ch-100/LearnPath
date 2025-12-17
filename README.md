@@ -2,6 +2,8 @@
 
 > A modern, full-stack learning management platform built with the MERN stack, featuring AI-powered mentorship, progress tracking, and personalized learning paths.
 
+**🔗 Repository:** [https://github.com/Saumya-ch-100/LearnPath](https://github.com/Saumya-ch-100/LearnPath)
+
 **Business Model:** B2B2C platform designed for universities, bootcamps, and educational institutions to provide comprehensive learning management to their students. Think Udemy for Business or LinkedIn Learning for Enterprise.
 
 ![LearnPath Banner](https://img.shields.io/badge/MERN-Stack-success?style=for-the-badge) ![License](https://img.shields.io/badge/license-MIT-blue?style=for-the-badge) ![Node](https://img.shields.io/badge/node-%3E%3D18.0.0-brightgreen?style=for-the-badge) ![React](https://img.shields.io/badge/react-18.2.0-61dafb?style=for-the-badge)
@@ -74,8 +76,8 @@
 
 1. **Clone the repository**
 ```bash
-git clone https://github.com/yourusername/learnpath.git
-cd learnpath
+git clone https://github.com/Saumya-ch-100/LearnPath.git
+cd LearnPath
 ```
 
 2. **Install all dependencies (backend + frontend)**
@@ -909,8 +911,9 @@ This project is licensed under the **MIT License**. See `LICENSE` file for detai
 ## 📞 Support & Contact
 
 - **Email:** hello@learnpath.com
-- **Issues:** [GitHub Issues](https://github.com/yourusername/learnpath/issues)
-- **Discussions:** [GitHub Discussions](https://github.com/yourusername/learnpath/discussions)
+- **GitHub:** [https://github.com/Saumya-ch-100/LearnPath](https://github.com/Saumya-ch-100/LearnPath)
+- **Issues:** [GitHub Issues](https://github.com/Saumya-ch-100/LearnPath/issues)
+- **Discussions:** [GitHub Discussions](https://github.com/Saumya-ch-100/LearnPath/discussions)
 
 ---
 
