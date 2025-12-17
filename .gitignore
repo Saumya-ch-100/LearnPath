@@ -23,8 +23,9 @@ dist/
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-logs/
 *.log
+/logs/
+backend/logs/
 
 # OS files
 .DS_Store
