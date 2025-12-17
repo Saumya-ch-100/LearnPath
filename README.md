@@ -4,6 +4,8 @@
 
 **🔗 Repository:** [https://github.com/Saumya-ch-100/LearnPath](https://github.com/Saumya-ch-100/LearnPath)
 
+**🚀 Live Demo:** [Frontend](https://learnpath.vercel.app) | [Backend API](https://learnpath-97p7.onrender.com)
+
 **Business Model:** B2B2C platform designed for universities, bootcamps, and educational institutions to provide comprehensive learning management to their students. Think Udemy for Business or LinkedIn Learning for Enterprise.
 
 ![LearnPath Banner](https://img.shields.io/badge/MERN-Stack-success?style=for-the-badge) ![License](https://img.shields.io/badge/license-MIT-blue?style=for-the-badge) ![Node](https://img.shields.io/badge/node-%3E%3D18.0.0-brightgreen?style=for-the-badge) ![React](https://img.shields.io/badge/react-18.2.0-61dafb?style=for-the-badge)
@@ -91,9 +93,13 @@ Create `/backend/.env`:
 ```env
 PORT=5050
 MONGO_URI=mongodb://localhost:27017/learnpath
-JWT_SECRET=your_super_secret_jwt_key_here_change_this
+JWT_SECRET=your_super_secret_jwt_key_change_in_production
+JWT_EXPIRES_IN=7d
 NODE_ENV=development
+CLIENT_URL=http://localhost:5173
 ```
+
+> ⚠️ **Security:** Never commit `.env` files. Use strong, unique secrets in production.
 
 4. **Start both servers**
 ```bash
@@ -833,7 +839,30 @@ node src/scripts/makeAdmin.js <email>
 - Contact information
 
 ---
+## 🌐 Deployment
 
+**Live Application:**
+- **Frontend:** Deployed on Vercel → [learnpath.vercel.app](https://learnpath.vercel.app)
+- **Backend:** Deployed on Render → [learnpath-97p7.onrender.com](https://learnpath-97p7.onrender.com)
+- **Database:** MongoDB Atlas (Cloud)
+
+**Deployment Configuration:**
+
+**Vercel (Frontend):**
+- Root Directory: `frontend`
+- Build Command: `npm run build`
+- Output Directory: `dist`
+- Environment Variable: `VITE_API_URL` (points to Render backend)
+
+**Render (Backend):**
+- Root Directory: `backend`
+- Build Command: `npm install`
+- Start Command: `npm start`
+- Environment Variables: `MONGO_URI`, `JWT_SECRET`, `NODE_ENV`, `PORT`, `CLIENT_URL`
+
+> 📘 For detailed deployment instructions, see [DEPLOYMENT_GUIDE.md](DEPLOYMENT_GUIDE.md)
+
+---
 ## � License
 
 This project is licensed under the **MIT License**.

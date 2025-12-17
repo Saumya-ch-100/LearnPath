@@ -1,0 +1,15 @@
+name: Keep Backend Alive
+
+on:
+  schedule:
+    # Ping every 14 minutes (to prevent 15-min sleep)
+    - cron: '*/14 * * * *'
+  workflow_dispatch: # Manual trigger option
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Ping Backend
+        run: |
+          curl -f https://learnpath-97p7.onrender.com/api/health || echo "Backend is waking up..."
