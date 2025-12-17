@@ -1,0 +1,22 @@
+{
+  "name": "learnpath",
+  "version": "1.0.0",
+  "description": "A modern learning management platform with mentorship and progress tracking",
+  "scripts": {
+    "start": "concurrently \"npm run start:backend\" \"npm run start:frontend\"",
+    "start:backend": "cd backend && npm start",
+    "start:frontend": "cd frontend && npm run dev",
+    "install:all": "npm install && cd backend && npm install && cd ../frontend && npm install"
+  },
+  "keywords": [
+    "learning",
+    "education",
+    "mentorship",
+    "mern"
+  ],
+  "author": "Saumya",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
